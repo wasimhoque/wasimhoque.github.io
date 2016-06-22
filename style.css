@@ -16,6 +16,7 @@ header {
     font-size: 18px;
     padding: 2px 0px;
     box-shadow: 0px 3px 2px #444444;
+    margin-bottom: 24px;
 }
 div#bodyWrapper div {
     background: white;
