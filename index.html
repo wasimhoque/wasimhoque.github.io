@@ -8,16 +8,33 @@
 <script src="script.js"></script>
 </head>
 <body>
-<div id="mainGrid" class="ui-grid-b grid">
-	<div class="ui-block-a"><div class="ui-bar ui-bar-a">Block A</div></div>
-	<div class="ui-block-b"><div class="ui-bar ui-bar-a">Block B</div></div>
-	<div class="ui-block-c"><div class="ui-bar ui-bar-a">Block C</div></div>
-	<div class="ui-block-a"><div class="ui-bar ui-bar-a">Block A</div></div>
-	<div class="ui-block-b"><div class="ui-bar ui-bar-a">Block B</div></div>
-	<div class="ui-block-c"><div class="ui-bar ui-bar-a">Block C</div></div>
-	<div class="ui-block-a"><div class="ui-bar ui-bar-a">Block A</div></div>
-	<div class="ui-block-b"><div class="ui-bar ui-bar-a">Block B</div></div>
-	<div class="ui-block-c"><div class="ui-bar ui-bar-a">Block C</div></div>
+
+<div id="timer">
+    <span id="sw_m">00</span>:
+    <span id="sw_s">00</span>:
+    <span id="sw_ms">00</span>
+</div>
+<a id="popup" href="#myPopup" data-rel="popup"></a>
+<div data-role="popup" id="myPopup"  class="ui-content popup_notification">
+	<p>You completed in <span id="mpopup"></span>:<span id="spopup"></span>:<span id="mspopup"></span></p>
+	<button onClick="window.location.reload()">Restart</button>
+</div>
+
+<div id="mainGrid" class="ui-grid-c grid">
+	<div class="ui-block-a"><div id="box1" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-b"><div id="box2" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-c"><div id="box3" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-d"><div id="box4" class="ui-bar ui-bar-a"></div></div>
+	
+	<div class="ui-block-a"><div id="box5" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-b"><div id="box6" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-c"><div id="box7" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-d"><div id="box8" class="ui-bar ui-bar-a"></div></div>
+	
+	<div class="ui-block-a"><div id="box9" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-b"><div id="box10" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-c"><div id="box11" class="ui-bar ui-bar-a"></div></div>
+	<div class="ui-block-d"><div id="box12" class="ui-bar ui-bar-a"></div></div>
 </div>
 </body>
 </html>
