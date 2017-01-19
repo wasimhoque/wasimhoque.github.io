@@ -3,7 +3,7 @@
 }
 div#timer {
     margin: 0 auto;
-    width: 100px;
+    width: 96px;
     font-size: 22px;
 }
 #popup{
@@ -23,4 +23,11 @@ div#timer {
 }
 .clicked {
 	background: white;
+}
+div#myPopup-popup {
+    position: absolute !important;
+    margin: auto;
+    padding-left: 40.5%;
+    padding-right: 39%;
+    width: 220px;
 }
