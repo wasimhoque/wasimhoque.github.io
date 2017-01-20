@@ -233,11 +233,18 @@ function generateUnique(usedNumber){
 
 function init() {
 	$.APP.resetTimer();
+	if(charArray.length == 0) {
+		charArray = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+	}
 	usedNumber = [];
 	totalClicks = 0;
+	if($(".ui-popup-container").hasClass("ui-popup-active")){
+		$( "#myPopup" ).popup( "close" );
+	}
 	for(i=0;i<12;i++){
 		var num = generateUnique(usedNumber);
 		$("#box"+num).text(charArray.shift());
+		$("#box"+num).removeClass("clicked");
 	}
 }
 
