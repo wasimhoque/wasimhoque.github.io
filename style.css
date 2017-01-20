@@ -27,7 +27,11 @@ div#timer {
 div#myPopup-popup {
     position: absolute !important;
     margin: auto;
-    padding-left: 40.5%;
+    padding-left: 39%;
     padding-right: 39%;
-    width: 220px;
+    width: 230px;
+}
+#mpopup, #spopup, #mspopup {
+    font-weight: 700;
+	color: #4537bb;
 }
