@@ -240,6 +240,7 @@ function init() {
 	totalClicks = 0;
 	if($(".ui-popup-container").hasClass("ui-popup-active")){
 		$( "#myPopup" ).popup( "close" );
+		$("#mainGrid,#timer").css("display","block");
 	}
 	for(i=0;i<12;i++){
 		var num = generateUnique(usedNumber);
@@ -271,6 +272,7 @@ function tapHandler(event) {
 		if(totalClicks == 26) {
 			$.APP.stopTimer();
 			$("#popup").click();
+			$("#mainGrid,#timer").css("display","none");
 			$("#mpopup").text($("#sw_m").text());
 			$("#spopup").text($("#sw_s").text());
 			$("#mspopup").text($("#sw_ms").text());
