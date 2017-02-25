@@ -238,15 +238,13 @@ function init() {
 	}
 	usedNumber = [];
 	totalClicks = 0;
-	if($(".ui-popup-container").hasClass("ui-popup-active")){
-		$( "#myPopup" ).popup( "close" );
-		$("#mainGrid,#timer").css("display","block");
-	}
+	$(".scoreboard").css("display","none");
 	for(i=0;i<12;i++){
 		var num = generateUnique(usedNumber);
 		$("#box"+num).text(charArray.shift());
 		$("#box"+num).removeClass("clicked");
 	}
+    $("#mainGrid,#timer").css("display","block");
 }
 
 $(function(){
@@ -271,7 +269,7 @@ function tapHandler(event) {
 		}
 		if(totalClicks == 26) {
 			$.APP.stopTimer();
-			$("#popup").click();
+			$(".scoreboard").css("display","block");
 			$("#mainGrid,#timer").css("display","none");
 			$("#mpopup").text($("#sw_m").text());
 			$("#spopup").text($("#sw_s").text());
